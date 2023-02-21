@@ -1,0 +1,37 @@
+How To Run
+----------
+
+1) Open your terminal and install composer by billow mentioned commands
+
+	php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+	php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; 		unlink('composer-setup.php'); } echo PHP_EOL;"
+	php composer-setup.php
+	php -r "unlink('composer-setup.php');"
+
+
+2) Open mentioned git repo URL : https://github.com/mohitpatel5425/TOS-/tree/master
+
+3) Click on code green button and copy HTTPS link
+
+4) For clone use this repo run this command : git clone https://github.com/mohitpatel5425/TOS-.git
+
+5) Generate key by this command : php artisan key:generate
+
+6) Create blank database in your phpmyadmin
+
+Database Details
+----------------
+
+- Database name : tos
+
+
+
+7) Update database details in .ENV file like username and password
+
+8) Now it's time to create all tables in database so run this command : php artisan migrate
+   it will generate all tables in your tos database
+
+9) Now 1 step to go to run project, run this command : php artisan serve
+
+
+
